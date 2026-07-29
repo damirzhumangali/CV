@@ -1388,33 +1388,33 @@ main {
 
 /* Contact Section Redesign */
 .contact-intro {
-  margin: 20px 0 0;
+  margin: 12px 0 0;
   max-width: 640px;
   color: var(--muted);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-top: 32px;
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .contact-card {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 22px;
-  border-radius: var(--radius-lg);
+  gap: 4px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
   background: var(--bg-card);
   border: 1px solid var(--line);
   transition: transform 250ms ease, border-color 250ms ease, background 250ms ease, box-shadow 250ms ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   border-color: var(--line-gold);
   background: var(--bg-card-hover);
   box-shadow: var(--shadow-glow);
@@ -1426,39 +1426,39 @@ main {
 }
 
 .contact-card-icon {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: var(--gold);
   font-weight: 700;
 }
 
 .contact-card-label {
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
   font-weight: 700;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 
 .contact-card-value {
-  font-size: 1.05rem;
+  font-size: 0.92rem;
   color: #ffffff;
   font-weight: 600;
   word-break: break-word;
 }
 
 .languages-row {
-  margin-top: 28px;
-  padding-top: 24px;
+  margin-top: 20px;
+  padding-top: 18px;
   border-top: 1px solid var(--line);
 }
 
 .languages-label {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   color: var(--gold);
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
 }
 
@@ -1628,6 +1628,37 @@ main {
   .chip-row span {
     padding: 4px 10px;
     font-size: 0.75rem;
+  }
+
+  .contact-intro {
+    font-size: 0.85rem;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .contact-card {
+    padding: 10px 12px;
+    gap: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  .contact-card-icon {
+    font-size: 0.95rem;
+  }
+
+  .contact-card-label {
+    font-size: 0.62rem;
+    margin-top: 0;
+  }
+
+  .contact-card-value {
+    font-size: 0.78rem;
   }
 
   .bottom-dock-wrapper {
