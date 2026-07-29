@@ -1100,18 +1100,23 @@ main {
 
   .site-header {
     top: 10px;
-    padding: 10px 16px;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 10px 18px;
+    justify-content: space-between;
+    background: rgba(8, 12, 20, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
   }
 
-  .nav {
-    gap: 14px;
-    font-size: 0.82rem;
+  .site-header .nav {
+    display: none;
   }
 
   .header-cta {
-    display: none;
+    display: inline-flex;
+    padding: 6px 14px;
+    font-size: 0.78rem;
   }
 
   .portrait-frame {
@@ -1496,29 +1501,42 @@ main {
   color: #031e17;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 760px) {
   .bottom-dock-wrapper {
-    bottom: 16px;
-    width: calc(100% - 24px);
-    max-width: 420px;
+    bottom: max(12px, env(safe-area-inset-bottom, 12px));
+    width: calc(100vw - 20px);
+    max-width: 440px;
   }
 
   .bottom-dock {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5px 6px;
-    gap: 2px;
+    gap: 3px;
+    background: rgba(7, 11, 20, 0.92);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
   }
 
   .dock-item {
-    padding: 7px 10px;
+    padding: 7px 4px;
     min-width: 0;
     flex: 1;
-    font-size: 0.72rem;
+    font-size: 0.68rem;
+    gap: 2px;
   }
 
   .dock-icon {
     width: 18px;
     height: 18px;
+  }
+
+  .dock-label {
+    font-size: 0.68rem;
+    letter-spacing: -0.01em;
+  }
+
+  .page-content-inner {
+    padding-bottom: 75px;
   }
 }
