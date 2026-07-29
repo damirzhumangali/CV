@@ -539,3 +539,46 @@ if (auroraCanvas) {
 
   requestAnimationFrame(drawAurora);
 }
+
+// 11. Active Nav Link Spy (Top Header & Bottom Floating Dock)
+const spySections = document.querySelectorAll("section[id]");
+const topNavLinks = document.querySelectorAll(".nav a");
+const bottomDockItems = document.querySelectorAll(".dock-item");
+
+const updateActiveNav = () => {
+  let currentSectionId = "";
+  const scrollPosition = window.scrollY + 220;
+
+  spySections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      currentSectionId = section.getAttribute("id");
+    }
+  });
+
+  if (currentSectionId) {
+    topNavLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href === `#${currentSectionId}`) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+
+    bottomDockItems.forEach((item) => {
+      const href = item.getAttribute("href");
+      if (href === `#${currentSectionId}`) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  }
+};
+
+window.addEventListener("scroll", updateActiveNav, { passive: true });
+window.addEventListener("load", updateActiveNav);
+updateActiveNav();
