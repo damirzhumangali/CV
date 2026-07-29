@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damir Zhumangali | Fullstack Developer</title>
+  <meta name="description"
+    content="Portfolio of Damir Zhumangali, a fullstack developer building production-ready web products with polished frontend experiences and scalable backend systems." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="scroll-progress"></div>
+  <div id="cursor-glow" class="cursor-glow"></div>
+  <canvas id="ambient-canvas"></canvas>
+
+  <div class="page-shell">
+    <!-- Background Ambient Aura Waves -->
+    <div class="hero-wave hero-wave-left"></div>
+    <div class="hero-wave hero-wave-right"></div>
+    <div class="ambient ambient-gold"></div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo-circle">DZ</div>
+        <span class="brand-name">Damir Zhumangali</span>
+      </div>
+      <nav class="nav">
+        <a href="#about" class="active">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta magnetic" href="mailto:damirzmg06@gmail.com">Hire Me</a>
+    </header>
+
+    <main id="top">
+      <!-- Hero Section (fixed, стоит за всем контентом) -->
+      <section class="hero">
+
+        <div class="hero-image" id="portrait">
+
+          <img src="images/me.png" class="hero-photo normal" alt="Damir Zhumangali portrait">
+
+          <img src="images/future.png" class="hero-photo future" id="future" alt="Damir Zhumangali futuristic version">
+
+          <div class="scan-circle"></div>
+
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+          <span class="hero-tag">
+            FULLSTACK DEVELOPER • ASTANA
+          </span>
+
+          <h1>Damir Zhumangali</h1>
+
+          <p>
+            Building production-ready web products with frontend polish,
+            backend depth and AI integration.
+          </p>
+
+
+
+        </div>
+
+      </section>
+
+      <!-- Весь остальной контент едет поверх зафиксированного hero -->
+      <div class="page-content">
+        <canvas class="aurora-layer" id="aurora-canvas" aria-hidden="true"></canvas>
+        <div class="page-content-inner">
+
+          <!-- About Section -->
+          <section class="about section" id="about">
+            <div class="section-heading reveal">
+              <p class="eyebrow">About</p>
+              <h2>Young builder, real product mindset.</h2>
+            </div>
+            <div class="about-grid">
+              <div class="about-panel reveal tilt-card" data-spotlight>
+                <p>
+                  I am a fullstack developer with a shipped live product, HealthAssist, an AI-powered medical platform
+                  built
+                  across frontend, backend, data, and real-world user flows.
+                </p>
+                <p>
+                  My background in Industrial IoT shaped how I design systems: I think in failure modes, stateless
+                  flows,
+                  independent layers, and interfaces that still feel calm under complexity.
+                </p>
+              </div>
+              <div class="about-panel reveal tilt-card" data-spotlight>
+                <ul class="detail-list">
+                  <li><span class="list-bullet">✦</span> Production-ready React and Next.js interfaces</li>
+                  <li><span class="list-bullet">✦</span> REST APIs, Firebase, Prisma, SQLite, and session design</li>
+                  <li><span class="list-bullet">✦</span> Interactive 3D UI work with Three.js</li>
+                  <li><span class="list-bullet">✦</span> Strong interest in fast product shipping with clean UX</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Experience Section -->
+          <section class="experience section" id="experience">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Experience</p>
+              <h2>Comfortable in product work and technical support reality.</h2>
+            </div>
+
+            <div class="timeline">
+              <article class="timeline-item reveal tilt-card" data-spotlight>
+                <div class="timeline-meta">
+                  <p>Mar 2026 – May 2026</p>
+                  <span>Astana, Kazakhstan</span>
+                </div>
+                <div class="timeline-content">
+                  <h3>Technical Support Intern · Energy Solution Center</h3>
+                  <p>Resolved hardware, software, and network issues for clients and documented recurring cases to
+                    reduce repeat
+                    escalations.</p>
+                </div>
+              </article>
+
+              <article class="timeline-item reveal tilt-card" data-spotlight>
+                <div class="timeline-meta">
+                  <p>Jan 2026 – Present</p>
+                  <span>Astana, Kazakhstan</span>
+                </div>
+                <div class="timeline-content">
+                  <h3>Technical Support Intern · Energy Solution Center</h3>
+                  <p>Resolved hardware, software, and network issues for clients and documented recurring cases to
+                    reduce
+                    repeat escalations.</p>
+                </div>
+              </article>
+
+              <article class="timeline-item reveal tilt-card" data-spotlight>
+                <div class="timeline-meta">
+                  <p>2023 – 2026 Expected</p>
+                  <span>English-medium programme</span>
+                </div>
+                <div class="timeline-content">
+                  <h3>B.Sc. Industrial Internet of Things · Astana IT University (GPA: 3.04 / 4.0)</h3>
+                  <p>Built a foundation in resilient systems, connected devices, real-time data, and engineering across
+                    hardware and software.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Projects Section -->
+          <section class="projects section" id="projects">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Projects</p>
+              <h2>Shipped products, real users, real problems solved.</h2>
+            </div>
+
+            <div class="project-showcase-shell" data-project-showcase>
+              <div class="project-showcase-sticky">
+                <div class="project-showcase-bar">
+                  <p>Featured Work</p>
+                  <span>Scroll to explore →</span>
+                </div>
+
+                <div class="project-showcase-window">
+                  <div class="project-showcase-track" data-project-track>
+
+                    <article class="showcase-card" data-showcase-card>
+                      <div class="showcase-card-screen">
+                        <img src="images/healthcare.png" alt="HealthAssist platform screenshot">
+                      </div>
+                      <div class="showcase-card-body">
+                        <div class="showcase-card-topline">
+                          <p class="showcase-card-type">AI Healthcare Platform</p>
+                          <p class="showcase-card-domain">healthcare.kz</p>
+                        </div>
+                        <h3>HealthAssist</h3>
+                        <p class="showcase-card-copy">
+                          AI-powered platform for symptom analysis, clinic search, and patient-provider interaction —
+                          built end-to-end from architecture to deployment.
+                        </p>
+                        <div class="showcase-card-tags">
+                          <span>Next.js</span>
+                          <span>Node.js</span>
+                          <span>Express</span>
+                          <span>Firebase</span>
+                          <span>Prisma</span>
+                          <span>Three.js</span>
+                          <span>Python</span>
+                        </div>
+                        <a class="text-link" href="https://healthcare.kz" target="_blank" rel="noreferrer">View
+                          project</a>
+                      </div>
+                    </article>
+
+                    <article class="showcase-card" data-showcase-card>
+                      <div class="showcase-card-screen">
+                        <img src="images/arisaka.jpg" alt="Aryzaka app screenshot">
+                      </div>
+                      <div class="showcase-card-body">
+                        <div class="showcase-card-topline">
+                          <p class="showcase-card-type">RPG Study App · iOS</p>
+                          <p class="showcase-card-domain">In Development</p>
+                        </div>
+                        <h3>Aryzaka</h3>
+                        <p class="showcase-card-copy">
+                          Mobile app that turns UNT and IELTS exam prep into an RPG experience with progress systems and
+                          character growth.
+                        </p>
+                        <div class="showcase-card-tags">
+                          <span>Swift</span>
+                          <span>SwiftUI</span>
+                          <span>SpriteKit</span>
+                        </div>
+                        <a class="text-link" href="https://github.com/damirzhumangali" target="_blank"
+                          rel="noreferrer">View on GitHub</a>
+                      </div>
+                    </article>
+
+                    <article class="showcase-card" data-showcase-card>
+                      <div class="showcase-card-screen">
+                        <img src="images/aq_cons.png" alt="AQ Construction website screenshot">
+                      </div>
+                      <div class="showcase-card-body">
+                        <div class="showcase-card-topline">
+                          <p class="showcase-card-type">Corporate Website</p>
+                          <p class="showcase-card-domain">aq.construction.kz</p>
+                        </div>
+                        <h3>AQ Construction</h3>
+                        <p class="showcase-card-copy">
+                          Website for a construction company where clients explore services and pricing, and connect
+                          quickly with managers for consultations.
+                        </p>
+                        <div class="showcase-card-tags">
+                          <span>Next.js</span>
+                          <span>React</span>
+                          <span>Vercel</span>
+                        </div>
+                        <a class="text-link" href="https://aq.construction.kz" target="_blank" rel="noreferrer">View
+                          project</a>
+                      </div>
+                    </article>
+
+                    <article class="showcase-card" data-showcase-card>
+                      <div class="showcase-card-screen">
+                        <img src="images/atg.png" alt="Atg Construction website screenshot">
+                      </div>
+                      <div class="showcase-card-body">
+                        <div class="showcase-card-topline">
+                          <p class="showcase-card-type">Corporate Website</p>
+                          <p class="showcase-card-domain">atg-construction.com.kz</p>
+                        </div>
+                        <h3>Atg Construction</h3>
+                        <p class="showcase-card-copy">
+                          Marketing site for a construction company, presenting services and enabling fast
+                          client-manager communication.
+                        </p>
+                        <div class="showcase-card-tags">
+                          <span>Next.js</span>
+                          <span>React</span>
+                          <span>Vercel</span>
+                        </div>
+                        <a class="text-link" href="https://atg-construction.com.kz" target="_blank"
+                          rel="noreferrer">View project</a>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Skills Section -->
+          <section class="skills section" id="skills">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Skills</p>
+              <h2>Frontend polish, backend delivery, systems thinking.</h2>
+            </div>
+            <div class="skills-grid">
+              <div class="skills-panel reveal tilt-card" data-spotlight>
+                <h3>Frontend</h3>
+                <div class="chip-row">
+                  <span>React</span>
+                  <span>React Native</span>
+                  <span>Next.js</span>
+                  <span>Three.js</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>TypeScript</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+              <div class="skills-panel reveal tilt-card" data-spotlight>
+                <h3>Backend</h3>
+                <div class="chip-row">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>REST API</span>
+                  <span>Prisma</span>
+                  <span>SQLite</span>
+                  <span>Firebase</span>
+                </div>
+              </div>
+              <div class="skills-panel reveal tilt-card" data-spotlight>
+                <h3>IOS Developer</h3>
+                <div class="chip-row">
+                  <span>iOS</span>
+                  <span>Swift</span>
+                  <span>SwiftUI</span>
+                  <span>SpriteKit</span>
+                  <span>Xcode</span>
+                  <span>Apple Frameworks</span>
+                  <span>SwiftUX</span>
+                </div>
+              </div>
+              <div class="skills-panel reveal tilt-card" data-spotlight>
+                <h3>Languages</h3>
+                <div class="chip-row">
+                  <span>JavaScript</span>
+                  <span>TypeScript</span>
+                  <span>Python</span>
+                  <span>C++</span>
+                  <span>Java</span>
+                  <span>C</span>
+                </div>
+              </div>
+              <div class="skills-panel reveal tilt-card" data-spotlight>
+                <h3>Tools & Concepts</h3>
+                <div class="chip-row">
+                  <span>Git</span>
+                  <span>GitHub</span>
+                  <span>VS Code</span>
+                  <span>Linux</span>
+                  <span>Figma</span>
+                  <span>Fault-Tolerant Design</span>
+                  <span>Real-Time Systems</span>
+                  <span>Auth Flows</span>
+                  <span>Session Management</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact Section -->
+          <!-- Contact Section -->
+          <section class="contact section" id="contact">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Let's Build</p>
+              <h2>Open to fullstack and frontend roles.</h2>
+            </div>
+
+            <p class="contact-intro reveal">
+              Looking to ship fast, learn from strong engineers, and help turn good ideas into real products.
+            </p>
+
+            <div class="contact-grid reveal">
+              <a class="contact-card contact-card-primary" href="mailto:damirzmg06@gmail.com">
+                <span class="contact-card-icon">✉</span>
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">damirzmg06@gmail.com</span>
+              </a>
+
+              <a class="contact-card" href="tel:+77081801061">
+                <span class="contact-card-icon">☎</span>
+                <span class="contact-card-label">Phone</span>
+                <span class="contact-card-value">+7 708 180 1061</span>
+              </a>
+
+              <a class="contact-card" href="https://github.com/damirzhumangali" target="_blank" rel="noreferrer">
+                <span class="contact-card-icon">⌥</span>
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">damirzhumangali</span>
+              </a>
+
+              <a class="contact-card" href="https://linkedin.com/in/damirzhumangali" target="_blank" rel="noreferrer">
+                <span class="contact-card-icon">in</span>
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">Damir Zhumangali</span>
+              </a>
+            </div>
+
+            <div class="languages-row reveal">
+              <p class="languages-label">Languages</p>
+              <div class="chip-row">
+                <span>English — TOEFL 87</span>
+                <span>Russian — C1</span>
+                <span>Kazakh — Native</span>
+              </div>
+            </div>
+
+            <div class="footer-links reveal">
+              <span>Astana, Kazakhstan</span>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
