@@ -936,7 +936,7 @@ main {
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
   gap: 20px;
-  padding: 26px;
+  padding: 22px 24px;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   background: var(--bg-card);
@@ -945,26 +945,29 @@ main {
 .timeline-meta p {
   margin: 0;
   color: #ffffff;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
 .timeline-meta span {
   display: inline-block;
-  margin-top: 6px;
+  margin-top: 4px;
   color: var(--gold);
-  font-size: 0.86rem;
+  font-size: 0.8rem;
 }
 
 .timeline-content h3 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  line-height: 1.35;
   color: #ffffff;
 }
 
 .timeline-content p {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   color: var(--muted);
-  line-height: 1.74;
+  font-size: 0.88rem;
+  line-height: 1.6;
 }
 
 /* Skills */
@@ -972,11 +975,11 @@ main {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .skills-panel {
-  padding: 26px;
+  padding: 22px 24px;
   background: var(--bg-card);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -984,24 +987,24 @@ main {
 
 .skills-panel h3 {
   margin: 0;
-  font-size: 1.45rem;
+  font-size: 1.15rem;
   color: #ffffff;
 }
 
 .chip-row {
-  margin-top: 16px;
+  margin-top: 14px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
 .chip-row span {
-  padding: 8px 16px;
+  padding: 6px 14px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--line);
   color: var(--text);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 500;
   transition: all 250ms ease;
 }
@@ -1550,6 +1553,29 @@ main {
   .detail-list li {
     font-size: 0.84rem;
     padding: 10px 14px;
+  }
+
+  .timeline-item {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .timeline-meta p {
+    font-size: 0.86rem;
+  }
+
+  .timeline-meta span {
+    font-size: 0.78rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.02rem;
+    line-height: 1.3;
+  }
+
+  .timeline-content p {
+    font-size: 0.85rem;
+    line-height: 1.55;
   }
 
   .bottom-dock-wrapper {
