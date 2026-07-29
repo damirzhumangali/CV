@@ -16,37 +16,28 @@
   --radius-lg: 20px;
   --radius-md: 14px;
   --radius-sm: 10px;
-  --container: min(1600px, calc(100% - 32px));
+  --container: min(1720px, calc(100% - 64px));
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* Custom Sleek Dark Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #08080a;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--gold);
-}
-
+/* Completely Hide All Browser Scrollbars */
 html, body {
   scroll-behavior: smooth;
   overflow-x: hidden !important;
   max-width: 100% !important;
   width: 100% !important;
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE/Edge */
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
 }
 
 body {
