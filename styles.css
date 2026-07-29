@@ -16,16 +16,18 @@
   --radius-lg: 20px;
   --radius-md: 14px;
   --radius-sm: 10px;
-  --container: min(1220px, calc(100% - 32px));
+  --container: min(1480px, calc(100% - 48px));
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
 body {
@@ -34,8 +36,6 @@ body {
   color: var(--text);
   background: var(--bg);
   font-family: "Plus Jakarta Sans", sans-serif;
-  overflow-x: hidden !important;
-  max-width: 100%;
   position: relative;
 }
 
